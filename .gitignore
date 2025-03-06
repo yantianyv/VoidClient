@@ -1,0 +1,4 @@
+config.json
+history/*
+output/*
+.vscode/
