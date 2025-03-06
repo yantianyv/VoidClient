@@ -1,7 +1,7 @@
 config.json
 history/*
 output/*
-
+.vscode/
 
 #以下内容为系统创建
 # Byte-compiled / optimized / DLL files
