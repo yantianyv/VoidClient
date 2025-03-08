@@ -2,7 +2,7 @@ config.json
 history/*
 output/*
 .vscode/
-
+__pycache__/
 #以下内容为系统创建
 # Byte-compiled / optimized / DLL files
 __pycache__/
