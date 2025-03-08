@@ -53,6 +53,7 @@ def _use_plugin(plugin_name, plugin_arg1, plugin_arg2):
             _enable_plugin(plugin_arg1)
         else:
             print_color(f"插件{plugin_name}不支持{plugin_arg2}操作", Fore.RED)
+            history.add("system","你使用了错误的插件语法，plugin语句只能用于激活插件，而非调用插件。激活与调用是两种不同的行为。")
         return
     """使用插件"""
     plugin_name = f"plugins.{plugin_name}"

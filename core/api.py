@@ -11,7 +11,7 @@ from rich.console import Console
 from rich.markdown import Markdown
 
 client = OpenAI(api_key=config["api_key"], base_url=config["base_url"])
-temperature = 1.0
+temperature = 0.0 # 目前发现把temperature调高会出现DeepSeek无法正常使用插件的问题，qwen coder在插件调用的能力上要优于ChatGPT。
 def user_ask(temperature=temperature,client=client, message_history = history.history):
     try:
         full_response = ""
